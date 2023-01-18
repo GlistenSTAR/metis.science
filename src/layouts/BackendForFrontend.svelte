@@ -17,17 +17,32 @@
 			</div>
 		</Col>
 		<Col col="6">
-			<img src="assets/img/code_bg.jpg" alt="code" />
+			<!-- <img src="assets/img/code_bg.jpg" alt="code" /> -->
+			<CodeEditor {code} lang="css" loc {...$$restProps} />
 		</Col>
 	</Grid>
 </div>
 
-<script>
+<script lang="ts">
 	import { Grid, Col, Button } from 'svelte-spectre';
 	import { Logo } from '@/components/index';
+	import CodeEditor from 'svelte-code-editor';
+
+	let code = `				line-height: 1;
+				font-size: 9px;
+				color: black;
+				padding-top: 8px;
+			}
+		}
+		li.triangle_col {
+			font-size: 22px;
+			border: none;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;`;
 </script>
 
-<style>
+<style lang="scss">
 	.bff {
 		padding: 146px 50px 220px;
 	}

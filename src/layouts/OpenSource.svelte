@@ -13,11 +13,11 @@
 	</Grid>
 </div>
 
-<script lang="ts">
+<script lang="ts" context="module">
 	import { Grid, Col, Button } from 'svelte-spectre';
 </script>
 
-<style>
+<style lang="scss">
 	.open_source {
 		position: relative;
 		padding: 220px 66px;

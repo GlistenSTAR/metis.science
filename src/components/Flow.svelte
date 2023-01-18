@@ -1,29 +1,23 @@
 <div class="flow">
 	<div class="flow_wrapper">
 		<div class="flow_item">
-			<span class="sign">#</span>	
-			<span>Metis is a digital materials lab assistant.</span>	
+			<span class="sign">#</span>
+			<span>Digital materials lab assistant</span>
 		</div>
 		<div class="flow_item">
-			<span class="sign">#</span>	
-			<span>Metis is a digital materials lab assistant.</span>	
+			<span class="sign">#</span>
+			<span>Free open-source virtual materials environment</span>
 		</div>
 		<div class="flow_item">
-			<span class="sign">#</span>	
-			<span>Metis is a digital materials lab assistant.</span>	
+			<span class="sign">#</span>
+			<span>Highly-scalable cheap scientific simulations in the cloud</span>
 		</div>
 		<div class="flow_item">
-			<span class="sign">#</span>	
-			<span>Metis is a digital materials lab assistant.</span>	
+			<span class="sign">#</span>
+			<span>Modular reusable component-based system</span>
 		</div>
 	</div>
 </div>
-
-<script lang="ts" context="module">
-</script>
-
-<script lang="ts">
-</script>
 
 <style lang="scss">
 
@@ -50,19 +44,31 @@
                 transform: translateX(-39.5vw)
 			}
 		}
+		@media (max-width: 1016px) {
+			width: 300vw;
+		}
 	}
-
+	
 	.flow_item{
 		display: flex;
 		align-items: center;
 		margin-right: 180px;
 		width: max-content;
+		@media (max-width: 1556px) {
+			margin-right: 40px;
+		}
 	}
 	.flow_item span{
 		font-size: 28px;
+		@media (max-width: 1276px) {
+			font-size: 22px;
+		}
 	}
 	.flow_item .sign{
 		font-size: 40px;
 		margin-right: 5px;
+		@media (max-width: 1276px) {
+			font-size: 24px;
+		}
 	}
 </style>

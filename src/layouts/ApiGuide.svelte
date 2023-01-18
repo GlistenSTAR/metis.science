@@ -16,10 +16,7 @@
 	</div>
 </div>
 
-<script lang="ts">
-</script>
-
-<style>
+<style lang="scss">
 	.api_guide {
 		position: relative;
 		overflow: hidden;
@@ -27,7 +24,7 @@
 	.api_header {
 		padding: 28px 50px;
 		text-align: center;
-		font-size: 48px;
+		font-size: 28px;
 		color: white;
 	}
 	.api_body {

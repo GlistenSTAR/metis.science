@@ -14,10 +14,7 @@
 	<img src="assets/img/crystalline_structure.jpg" alt="crystalline" class="crystalline_img" />
 </div>
 
-<script>
-</script>
-
-<style>
+<style lang="scss">
 	.crystalline {
 		background: #111;
 		padding: 160px 50px 390px;

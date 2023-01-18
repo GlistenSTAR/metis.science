@@ -70,9 +70,9 @@
 		]
 	},
 	"devDependencies": {
-		"@slidy/svelte": "^3.3.0",
-		"@slidy/easing": "^1.0.5",
 		"@slidy/animation": "^1.0.7",
+		"@slidy/easing": "^1.0.5",
+		"@slidy/svelte": "^3.3.0",
 		"@tsconfig/svelte": "^3.0.0",
 		"@types/eslint": "^8.4.6",
 		"@types/node": "^18.7.18",
@@ -89,6 +89,7 @@
 		"sass": "^1.54.9",
 		"svelte": "^3.50.1",
 		"svelte-check": "^2.9.0",
+		"svelte-code-editor": "^1.0.1",
 		"svelte-preprocess": "^4.10.7",
 		"svelte-spectre": "^0.4.15",
 		"tslib": "^2.4.0",

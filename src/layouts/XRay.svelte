@@ -48,11 +48,11 @@
 	</Grid>
 </div>
 
-<script>
+<script lang="ts" context="module">
 	import { Grid, Col } from 'svelte-spectre';
 </script>
 
-<style>
+<style lang="scss">
 	.xray_box {
 		padding: 160px 50px 0;
 		position: relative;
@@ -96,7 +96,7 @@
 	}
 	.xray .xray_img {
 		position: absolute;
-		width: 820px;
+		width: 42%;
 		height: 862px;
 	}
 
@@ -141,5 +141,11 @@
 		font-size: 48px;
 		line-height: 116%;
 		font-weight: 500;
+	}
+
+	@media (max-width: 1650px) {
+		.xray .xray_img {
+			width: 45%;
+		}
 	}
 </style>

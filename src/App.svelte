@@ -1,12 +1,12 @@
 <Spectre>
 	<Header />
 	<Main />
-	<Footer />
+	<!-- <Footer /> -->
 </Spectre>
 
 <script lang="ts" context="module">
 	import { Spectre } from 'svelte-spectre';
-	import { Header, Footer, ImageGallery } from './views/';
+	import { Header, Footer } from './views/';
 	import { Main } from './layouts/';
 	import { darkTheme } from '@/stores/theme';
 </script>

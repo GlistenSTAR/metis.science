@@ -1,21 +1,40 @@
-<footer class="py-2 mt-2 bg-primary">
-	Hello
-	<!-- <Container>
-		<Grid>
-			<Col>
-			<span class="py-2" style="line-height: 2em;">
-				Developed by <a href="https://tilde.pro" target="_blank">Tilde MI</a> for <a href="https://www.basf.com" target="_blank">BASF SE</a> with the BSD open-source license.
-			</span>
-			</Col>
-			<Col col="auto">
-				<Switch bind:value={$darkTheme}>Dark theme</Switch>
-			</Col>
-		</Grid>
-	</Container> -->
+<footer class="bg-primary">
+	<Grid stack>
+		<Col col="3">
+			<div class="white_logo">
+				<Logo size="5em" color="light" />
+				<h1>Metis</h1>
+			</div>
+		</Col>
+		<Col col="3">
+			<div class="footer_about">
+				<h1>About</h1>
+				<li>Intro</li>
+				<li>Why Metis?</li>
+				<li>Technical Details</li>
+			</div>
+		</Col>
+		<Col col="3">
+			<div class="footer_product">
+				<h1>Product</h1>
+				<li>Download and try</li>
+				<li>GitHub</li>
+			</div>
+		</Col>
+		<Col col="3">
+			<div class="footer_contact">
+				<h1>Contacts</h1>
+				<li>Intro</li>
+				<li>Why Metis?</li>
+				<li>Technical Details</li>
+			</div>
+		</Col>
+	</Grid>
 </footer>
 
 <script lang="ts" context="module">
-	// import { Col, Grid, Container, Switch } from 'svelte-spectre';
+	import { Col, Grid } from 'svelte-spectre';
+	import { Logo } from '@/components/index';
 	// import { nodeAttribute } from '@/helpers/dom';
 	// import { darkTheme } from '@/stores/theme';
 </script>
@@ -25,6 +44,21 @@
 </script>
 
 <style lang="scss">
+	footer {
+		padding: 80px 50px 100px;
+		.white_logo {
+			display: flex;
+			align-items: center;
+			h1 {
+				margin-bottom: 0px;
+			}
+		}
+		li {
+			list-style: none;
+			font-size: 28px;
+			margin-bottom: 28px;
+		}
+	}
 	// :global(body),
 	// :global(html) {
 	// 	height: 100%;

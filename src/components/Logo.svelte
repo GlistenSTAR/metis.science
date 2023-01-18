@@ -1,5 +1,5 @@
 <span {id} style:--width={size}>
-	<Icon size="4x" color="dark">
+	<Icon size="4x" {color}>
 		{@html MetisLogo}
 	</Icon>
 </span>
@@ -12,6 +12,7 @@
 <script lang="ts">
 	export let id = 'metis';
 	export let size = '7em';
+	export let color: any = 'dark';
 </script>
 
 <style lang="scss">

@@ -9,11 +9,11 @@
 	</div>
 </div>
 
-<script lang="ts">
+<script lang="ts" context="module">
 	import { Logo } from '@/components';
 </script>
 
-<style>
+<style lang="scss">
 	.central {
 		position: relative;
 		padding: 180px 0;
@@ -28,12 +28,14 @@
 		width: 351px;
 	}
 	.central .central_inner {
-		width: 1676px;
+		width: 100%;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 		line-height: 1.1;
+		padding-left: 120px;
+		padding-right: 120px;
 	}
 	.central .central_title {
 		margin-bottom: 40px;
@@ -43,5 +45,11 @@
 		width: 1058px;
 		margin-bottom: 60px;
 		font-size: 36px;
+	}
+	@media (max-width: 1020px) {
+		.central .central_inner {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
 	}
 </style>

@@ -18,7 +18,6 @@
 	export let images: { [key: string]: string | number }[] = [];
 	export let index: number;
 	export let open = false;
-
 	function setIndex(i: number) {
 		open = !open;
 		index = i;

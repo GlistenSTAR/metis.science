@@ -21,7 +21,7 @@
 	</Grid>
 </div>
 
-<script>
+<script lang="ts">
 	import { Grid, Col } from 'svelte-spectre';
 
 	const menus = [
@@ -39,7 +39,7 @@
 	};
 </script>
 
-<style>
+<style lang="scss">
 	.goal {
 		position: relative;
 		background: #111;
@@ -78,7 +78,7 @@
 		position: absolute;
 		left: 0;
 		bottom: 0;
-		width: 792px;
+		width: 46%;
 		height: 509px;
 		z-index: 1;
 		visibility: hidden;
@@ -91,5 +91,11 @@
 		width: 100%;
 		font-weight: 300;
 		width: 80%;
+	}
+	@media (max-width: 1580px) {
+		.goal img {
+			width: 45%;
+			height: 409px;
+		}
 	}
 </style>
